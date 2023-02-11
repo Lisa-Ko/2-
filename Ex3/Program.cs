@@ -1,8 +1,8 @@
 ﻿Console.WriteLine("Введите число");
-int x = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите число");
-int y = int.Parse(Console.ReadLine());
-if (x > 0 && y > 0) Console.WriteLine("Точка в первой четверти");
-else if (x < 0 && y > 0) Console.WriteLine("Точка во второй четверти");
-else if (x > 0 && y < 0) Console.WriteLine("Точка в третьей четверти");
-else Console.WriteLine("Точка в четвертой четверти");
+int number = int.Parse(Console.ReadLine());
+string answer = "нет четверти соответствующей данному числу";
+if (number == 1) answer = "x > 0; y > 0";
+if (number == 2) answer = "x < 0; y > 0";
+if (number == 3) answer = "x > 0; y < 0";
+if (number == 4) answer ="x < 0; y < 0";
+Console.WriteLine(answer);
